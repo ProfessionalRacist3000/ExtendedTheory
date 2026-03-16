@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Купить курс — ExtendedTheory</title>
+    <link rel="stylesheet" href="styles.form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- хедерец -->
+    <header class="header">
+        <div class="container header__inner">
+            <a class="brand" href="#">ExtendedTheory</a>
+
+            <nav class="nav">
+                <a class="nav__link" href="main_str.html">Home</a>
+                <a class="nav__link" href="about.html">About</a>
+                <a class="nav__link is-active" href="form.html">Form</a>
+                <a class="nav__link" href="students.html">Students</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="success-overlay" id="successOverlay">
+        <div class="success-icon">
+            <svg width="32" height="32" fill="none" viewBox="0 0 24 24">
+                <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+        <p class="success-title">Добро пожаловать.</p>
+        <p class="success-sub">Оплата прошла. Доступ к курсу уже на твоей почте — проверь входящие.</p>
+    </div>
+
+    <main class="page">
+        <div class="container">
+            <div class="page__inner">
+
+                <!-- левая тема -->
+                <aside class="summary">
+                    <span class="summary__tag">Весенняя акция · −30%</span>
+                    <h1 class="summary__title">
+                        Гармония<br>тяжёлой <em>музыки</em>
+                    </h1>
+                    <p class="summary__subtitle">Полный курс по музыкальной теории для гитаристов и вокалистов</p>
+
+                    <div class="summary__divider"></div>
+
+                    <div class="course-card">
+                        <div class="course-card__header">
+                            <span class="course-card__name">Что входит в курс</span>
+                            <span class="course-card__badge">Хит</span>
+                        </div>
+                        <div class="course-card__body">
+                            <div class="course-feature">
+                                <svg class="course-feature__icon" fill="none" viewBox="0 0 24 24">
+                                    <path d="M9 19V6l12-3v13" stroke="currentColor" stroke-width="1.6"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="6" cy="19" r="3" stroke="currentColor" stroke-width="1.6" />
+                                    <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="1.6" />
+                                </svg>
+                                42 видеоурока — интервалы, аккорды, моды, ритм
+                            </div>
+                            <div class="course-feature">
+                                <svg class="course-feature__icon" fill="none" viewBox="0 0 24 24">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                                        stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                Разбор треков Slipknot, Gojira, Meshuggah, Behemoth
+                            </div>
+                            <div class="course-feature">
+                                <svg class="course-feature__icon" fill="none" viewBox="0 0 24 24">
+                                    <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"
+                                        stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="1.6"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                PDF-конспекты и упражнения к каждой теме
+                            </div>
+                            <div class="course-feature">
+                                <svg class="course-feature__icon" fill="none" viewBox="0 0 24 24">
+                                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor"
+                                        stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.6" />
+                                    <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor"
+                                        stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Закрытый Discord — фидбэк от Кирилла Куцнера
+                            </div>
+                            <div class="course-feature">
+                                <svg class="course-feature__icon" fill="none" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6" />
+                                    <path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.6"
+                                        stroke-linecap="round" />
+                                </svg>
+                                Бессрочный доступ + все будущие обновления
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pricing">
+                        <div class="pricing__row">
+                            <span class="pricing__label">Базовая цена</span>
+                            <span class="pricing__old">12 900 ₸</span>
+                        </div>
+                        <div class="pricing__row">
+                            <span class="pricing__label">Весенняя скидка −30%</span>
+                            <span class="pricing__discount">−3 870 ₸</span>
+                        </div>
+                        <div class="pricing__row pricing__row--total">
+                            <span class="pricing__label">Итого</span>
+                            <span class="pricing__value">9 030 ₸</span>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- правая форма -->
+                <div class="form-wrap">
+
+                    <!-- план -->
+                    <div class="form-section">
+                        <div class="form-section__title">
+                            <span class="form-section__num">1</span>
+                            Выбери тариф
+                        </div>
+
+                        <div class="plan-grid">
+                            <div class="plan-option">
+                                <input type="radio" name="plan" id="plan-base" value="base">
+                                <label for="plan-base">
+                                    <strong>Базовый</strong>
+                                    Видеоуроки + PDF
+                                    <span
+                                        style="font-size:1rem;font-family:var(--font-serif);color:var(--text);display:block;margin-top:8px;">9
+                                        030 ₸</span>
+                                </label>
+                            </div>
+                            <div class="plan-option">
+                                <input type="radio" name="plan" id="plan-pro" value="pro" checked>
+                                <label for="plan-pro">
+                                    <strong>Pro</strong>
+                                    + Discord + разборы
+                                    <span
+                                        style="font-size:1rem;font-family:var(--font-serif);color:var(--text);display:block;margin-top:8px;">12
+                                        900 ₸</span>
+                                    <span class="plan-save">Популярный</span>
+                                </label>
+                            </div>
+                            <div class="plan-option">
+                                <input type="radio" name="plan" id="plan-vip" value="vip">
+                                <label for="plan-vip">
+                                    <strong>VIP</strong>
+                                    + 2 живых сессии
+                                    <span
+                                        style="font-size:1rem;font-family:var(--font-serif);color:var(--text);display:block;margin-top:8px;">21
+                                        900 ₸</span>
+                                    <span class="plan-save">Максимум</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- личные данные -->
+                    <div class="form-section">
+                        <div class="form-section__title">
+                            <span class="form-section__num">2</span>
+                            Личные данные
+                        </div>
+
+                        <div class="field field__row">
+                            <div class="field">
+                                <label for="fname">Имя</label>
+                                <input type="text" id="fname" placeholder="Александр" autocomplete="given-name">
+                            </div>
+                            <div class="field">
+                                <label for="lname">Фамилия</label>
+                                <input type="text" id="lname" placeholder="Громов" autocomplete="family-name">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="example@mail.ru" autocomplete="email">
+                        </div>
+
+                        <div class="field">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel">
+                        </div>
+
+                        <div class="field">
+                            <label for="level">Уровень игры</label>
+                            <select id="level">
+                                <option value="" disabled selected>Выбери свой уровень</option>
+                                <option>Новичок — учусь держать гитару</option>
+                                <option>Любитель — знаю несколько аккордов</option>
+                                <option>Средний — играю, но теория хромает</option>
+                                <option>Продвинутый — хочу глубже в гармонию</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="goal">Чего хочешь достичь? (необязательно)</label>
+                            <textarea id="goal"
+                                placeholder="Хочу понять, почему риффы Meshuggah звучат так жёстко..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- оплата -->
+                    <div class="form-section">
+                        <div class="form-section__title">
+                            <span class="form-section__num">3</span>
+                            Оплата
+                        </div>
+
+                        <div class="field card-field">
+                            <label for="card">Номер карты</label>
+                            <input type="text" id="card" placeholder="0000 0000 0000 0000" maxlength="19"
+                                autocomplete="cc-number">
+                            <div class="card-icons">
+                                <div class="card-icon">VISA</div>
+                                <div class="card-icon">MC</div>
+                            </div>
+                        </div>
+
+                        <div class="field field__row">
+                            <div class="field">
+                                <label for="expiry">Срок действия</label>
+                                <input type="text" id="expiry" placeholder="ММ / ГГ" maxlength="7"
+                                    autocomplete="cc-exp">
+                            </div>
+                            <div class="field">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" placeholder="•••" maxlength="3" autocomplete="cc-csc">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="cardholder">Имя на карте</label>
+                            <input type="text" id="cardholder" placeholder="ALEXANDER GROMOV"
+                                style="text-transform:uppercase;letter-spacing:0.1em;" autocomplete="cc-name">
+                        </div>
+
+                        <div class="field">
+                            <label for="promo">Промокод</label>
+                            <div class="promo-row">
+                                <input type="text" id="promo" placeholder="METAL2025">
+                                <button class="promo-btn" type="button">Применить</button>
+                            </div>
+                        </div>
+
+                        <div class="agreement">
+                            <input type="checkbox" id="agree">
+                            <p>Я принимаю <a href="#">условия публичной оферты</a> и <a href="#">политику
+                                    конфиденциальности</a>. Понимаю, что покупаю цифровой продукт.</p>
+                        </div>
+
+                        <button class="submit-btn" id="submitBtn" type="button">
+                            Оплатить курс
+                        </button>
+
+                        <p class="submit-note">
+                            <svg width="14" height="14" fill="none" viewBox="0 0 24 24">
+                                <rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor"
+                                    stroke-width="1.8" />
+                                <path d="M7 11V7a5 5 0 0110 0v4" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" />
+                            </svg>
+                            Оплата защищена SSL-шифрованием
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <span class="footer__brand">ExtendedTheory</span>
+            <span>© 2026 · Сделано для Hexlet College</span>
+        </div>
+    </footer>
+
+    <script src="form.js"></script>
+</body>
+
+</html>
