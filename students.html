@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Наши ученики - ExtendedTheory</title>
+    <link rel="stylesheet" href="styles.students.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__inner">
+            <a class="brand" href="#">ExtendedTheory</a>
+
+            <nav class="nav">
+                <a class="nav__link" href="main_str.html">Home</a>
+                <a class="nav__link" href="about.html">About</a>
+                <a class="nav__link" href="form.html">Form</a>
+                <a class="nav__link is-active" href="students.html">Students</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <span class="hero__eyebrow">Реальные истории · Реальный результат</span>
+            <h1 class="hero__title">Наши <em>ученики</em><br>говорят сами за себя</h1>
+            <p class="hero__sub">Гитаристы, вокалисты, басисты — те, кто перестал играть вслепую и начал слышать музыку
+                по-настоящему.</p>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat__num">1 <span>240</span></div>
+                    <div class="stat__label">Учеников прошло</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__num">4.<span>9</span></div>
+                    <div class="stat__label">Средняя оценка</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__num">93<span>%</span></div>
+                    <div class="stat__label">Рекомендуют друзьям</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__num">3<span>+</span></div>
+                    <div class="stat__label">Года опыта</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- фильтр -->
+    <div class="filter-bar">
+        <div class="container">
+            <div class="filter-bar__inner">
+                <span class="filter-bar__label">Фильтр:</span>
+                <button class="filter-btn is-active">Все</button>
+                <button class="filter-btn">Гитаристы</button>
+                <button class="filter-btn">Вокалисты</button>
+                <button class="filter-btn">Басисты</button>
+                <button class="filter-btn">Новички</button>
+                <button class="filter-btn">Продвинутые</button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+
+        <section class="featured">
+            <div class="container">
+                <div class="featured__card">
+                    <div class="featured__avatar">Д</div>
+                    <div class="featured__body">
+                        <div class="featured__stars">
+                            <span class="star">★</span><span class="star">★</span>
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                        </div>
+                        <p class="featured__quote">
+                            «До ExtendedTheory я три года играл на гитаре и не понимал вообще ничего - просто учил табы.
+                            После первых пяти уроков про интервалы я наконец услышал, почему рифф из "Duality" звучит
+                            так давяще. Это как включить свет в тёмной комнате.»
+                        </p>
+                        <p class="featured__name">Дмитрий Власов</p>
+                        <p class="featured__meta">Ритм-гитарист · Екатеринбург · курс «Гармония тяжёлой музыки»</p>
+                        <span class="featured__tag">Лучший отзыв месяца</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="students-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Все отзывы</h2>
+                    <span class="section-count">Показано 6 из 248</span>
+                </div>
+
+                <div class="cards-grid">
+
+                    <div class="card">
+                        <div class="card__header">
+                            <div class="card__avatar">М</div>
+                            <div class="card__info">
+                                <div class="card__name">Максим Северин</div>
+                                <div class="card__role">Соло-гитарист · Москва</div>
+                            </div>
+                        </div>
+                        <div class="card__stars">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                                class="star">★</span><span class="star">★</span>
+                        </div>
+                        <p class="card__text">
+                            Понял, что такое <strong>фригийский лад</strong> и почему он звучит так агрессивно.
+                            Сразу написал рифф в духе Sepultura - группа в шоке была.
+                        </p>
+                        <div class="card__footer">
+                            <span class="card__course">Интервалы и моды</span>
+                            <span class="card__date">февраль 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__header">
+                            <div class="card__avatar">А</div>
+                            <div class="card__info">
+                                <div class="card__name">Алина Краснова</div>
+                                <div class="card__role">Вокалистка · Санкт-Петербург</div>
+                            </div>
+                        </div>
+                        <div class="card__stars">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                                class="star">★</span><span class="star">★</span>
+                        </div>
+                        <p class="card__text">
+                            Как вокалистке мне казалось, что теория - это «не моё». Кирилл объясняет так,
+                            что <strong>всё встаёт на места</strong>. Теперь слышу гармонические напряжения в треках
+                            Spiritbox.
+                        </p>
+                        <div class="card__footer">
+                            <span class="card__course">Гармонический анализ</span>
+                            <span class="card__date">январь 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__header">
+                            <div class="card__avatar">Р</div>
+                            <div class="card__info">
+                                <div class="card__name">Роман Дёмин</div>
+                                <div class="card__role">Бас-гитарист · Новосибирск</div>
+                            </div>
+                        </div>
+                        <div class="card__stars">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                                class="star">★</span><span class="star" style="color:#444;">★</span>
+                        </div>
+                        <p class="card__text">
+                            Взял курс ради понимания <strong>ритмических полиметрий</strong> Meshuggah.
+                            Раздел про odd-time signatures - просто находка. Четвёртая звезда за то, что хочется ещё
+                            больше материала.
+                        </p>
+                        <div class="card__footer">
+                            <span class="card__course">Ритм и полиметрия</span>
+                            <span class="card__date">март 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__header">
+                            <div class="card__avatar">С</div>
+                            <div class="card__info">
+                                <div class="card__name">Сергей Тимохин</div>
+                                <div class="card__role">Гитарист - самоучка · Казань</div>
+                            </div>
+                        </div>
+                        <div class="card__stars">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                                class="star">★</span><span class="star">★</span>
+                        </div>
+                        <p class="card__text">
+                            Восемь лет играл по слуху и не мог объяснить даже себе, что я делаю.
+                            Курс дал мне <strong>язык</strong>, которым я теперь описываю свою музыку.
+                            Начал писать треки осознанно.
+                        </p>
+                        <div class="card__footer">
+                            <span class="card__course">Полный курс Pro</span>
+                            <span class="card__date">декабрь 2024</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__header">
+                            <div class="card__avatar">В</div>
+                            <div class="card__info">
+                                <div class="card__name">Вера Огнева</div>
+                                <div class="card__role">Клавишница · Ростов-на-Дону</div>
+                            </div>
+                        </div>
+                        <div class="card__stars">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                                class="star">★</span><span class="star">★</span>
+                        </div>
+                        <p class="card__text">
+                            Я не металлистка, но хотела понять, как работает <strong>диссонанс в современной
+                                музыке</strong>.
+                            Подача без воды, никакой снисходительности. Уважаю.
+                        </p>
+                        <div class="card__footer">
+                            <span class="card__course">Диссонанс и аккорды</span>
+                            <span class="card__date">ноябрь 2024</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__header">
+                            <div class="card__avatar">И</div>
+                            <div class="card__info">
+                                <div class="card__name">Илья Матвеев</div>
+                                <div class="card__role">Ритм-гитарист · Тула</div>
+                            </div>
+                        </div>
+                        <div class="card__stars">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                                class="star">★</span><span class="star">★</span>
+                        </div>
+                        <p class="card__text">
+                            Discord - отдельный плюс. Задал вопрос в 23:00,
+                            Кирилл ответил с голосовым пояснением. <strong>Такого не ждал.</strong>
+                            Курс окупился за первую неделю.
+                        </p>
+                        <div class="card__footer">
+                            <span class="card__course">Полный курс VIP</span>
+                            <span class="card__date">январь 2025</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="band">
+            <div class="container">
+                <h2 class="band__title">До и после - <em>честно</em></h2>
+                <div class="before-after">
+                    <div class="ba-col ba-col--before">
+                        <div class="ba-label">До курса</div>
+                        <div class="ba-item">
+                            <div class="ba-dot"></div>Учу риффы по табам, не понимая что играю
+                        </div>
+                        <div class="ba-item">
+                            <div class="ba-dot"></div>Не могу объяснить, почему звук звучит тяжело
+                        </div>
+                        <div class="ba-item">
+                            <div class="ba-dot"></div>Импровизация — только «на удачу»
+                        </div>
+                        <div class="ba-item">
+                            <div class="ba-dot"></div>Боюсь теории, кажется, это не для меня
+                        </div>
+                        <div class="ba-item">
+                            <div class="ba-dot"></div>Пишу музыку вслепую, не понимаю структуру
+                        </div>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-arrow">
+                            <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ba-col ba-col--after">
+                        <div class="ba-label">После курса</div>
+                        <div class="ba-item">
+                            <div class="ba-dot"></div>Понимаю ладовую природу каждого рифа
+                        </div>
+                        <div class="ba-item">
+                            <div class="ba-dot"></div>Знаю, как строить напряжение и разрядку
+                        </div>
+                        <div class="ba-item">
+                            <div class="ba-dot"></div>Импровизирую осознанно в нужном ладу
+                        </div>
+                        <div class="ba-item">
+                            <div class="ba-dot"></div>Теория стала инструментом, а не страхом
+                        </div>
+                        <div class="ba-item">
+                            <div class="ba-dot"></div>Пишу треки с пониманием каждого решения
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-strip">
+            <div class="container">
+                <h2 class="cta-strip__title">Готов стать<br><em>следующим?</em></h2>
+                <p class="cta-strip__sub">Весенняя скидка 30% - только до конца марта</p>
+                <a href="form.html" class="cta-strip__btn">Начать обучение</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <span class="footer__brand">ExtendedTheory</span>
+            <span>© 2026 · Сделано для Hexlet College</span>
+        </div>
+    </footer>
+
+    <script src="students.js"></script>
+
+</body>
+
+</html>
