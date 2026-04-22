@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Подтверждение оплаты — ExtendedTheory</title>
+    <link rel="stylesheet" href="styles.form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0f0f0f;
+            color: #e0e0e0;
+        }
+
+        .page {
+            background-color: #0f0f0f;
+        }
+
+        .form-wrap {
+            background-color: #1a1a1a;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #2a2a2a;
+        }
+
+        .confirmation-banner {
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
+            padding: 3rem 2rem;
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+            border-radius: 16px;
+            animation: slideDown 0.6s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .confirmation-banner h2 {
+            font-size: 2rem;
+            margin: 0 0 0.5rem 0;
+            font-family: var(--font-serif);
+        }
+
+        .confirmation-banner p {
+            margin: 0.5rem 0;
+            opacity: 0.95;
+        }
+
+        .confirmation-banner .check-icon {
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            animation: scaleIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        @keyframes scaleIn {
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .confirmation-banner .check-icon svg {
+            color: white;
+            width: 28px;
+            height: 28px;
+        }
+
+        .form-field-view {
+            background: #1f1f1f;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 1px solid #333;
+        }
+
+        .form-field-view label {
+            display: block;
+            font-size: 0.85rem;
+            color: #a0a0a0;
+            font-weight: 500;
+            margin-bottom: 0.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-field-view .value {
+            font-size: 1rem;
+            color: #e0e0e0;
+            font-weight: 500;
+            word-break: break-word;
+        }
+
+        .form-section-view {
+            margin-bottom: 2.5rem;
+        }
+
+        .form-section-view__title {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            font-family: var(--font-serif);
+            color: #ffffff;
+        }
+
+        .form-section-view__num {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .field-row-view {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .field-row-view {
+                grid-template-columns: 1fr;
+            }
+
+            .confirmation-banner h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--accent);
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .back-link:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- хедерец -->
+    <header class="header">
+        <div class="container header__inner">
+            <a class="brand" href="#">ExtendedTheory</a>
+
+            <nav class="nav">
+                <a class="nav__link" href="main_str.html">Home</a>
+                <a class="nav__link" href="about.html">About</a>
+                <a class="nav__link" href="form.html">Form</a>
+                <a class="nav__link" href="students.html">Students</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <div class="container">
+            <div class="page__inner">
+
+                <!-- левая информация -->
+                <aside class="summary">
+                    <div class="confirmation-banner">
+                        <div class="check-icon">
+                            <svg fill="none" viewBox="0 0 24 24">
+                                <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h2>Спасибо!</h2>
+                        <p>Оплата успешно обработана</p>
+                        <p style="font-size: 0.95rem;">Ссылка на курс отправлена на вашу почту</p>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-card__header">
+                            <span class="course-card__name">Что входит в курс</span>
+                            <span class="course-card__badge">Хит</span>
+                        </div>
+                        <div class="course-card__body">
+                            <div class="course-feature">
+                                <svg class="course-feature__icon" fill="none" viewBox="0 0 24 24">
+                                    <path d="M9 19V6l12-3v13" stroke="currentColor" stroke-width="1.6"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="6" cy="19" r="3" stroke="currentColor" stroke-width="1.6" />
+                                    <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="1.6" />
+                                </svg>
+                                42 видеоурока — интервалы, аккорды, моды, ритм
+                            </div>
+                            <div class="course-feature">
+                                <svg class="course-feature__icon" fill="none" viewBox="0 0 24 24">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                                        stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                Разбор треков Slipknot, Gojira, Meshuggah, Behemoth
+                            </div>
+                            <div class="course-feature">
+                                <svg class="course-feature__icon" fill="none" viewBox="0 0 24 24">
+                                    <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"
+                                        stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="1.6"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                PDF-конспекты и упражнения к каждой теме
+                            </div>
+                            <div class="course-feature">
+                                <svg class="course-feature__icon" fill="none" viewBox="0 0 24 24">
+                                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor"
+                                        stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.6" />
+                                    <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor"
+                                        stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Закрытый Discord — фидбэк от Кирилла Куцнера
+                            </div>
+                            <div class="course-feature">
+                                <svg class="course-feature__icon" fill="none" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6" />
+                                    <path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.6"
+                                        stroke-linecap="round" />
+                                </svg>
+                                Бессрочный доступ + все будущие обновления
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- правая часть с данными -->
+                <div class="form-wrap">
+
+                    <!-- выбранный план -->
+                    <div class="form-section-view">
+                        <div class="form-section-view__title">
+                            <span class="form-section-view__num">1</span>
+                            Выбранный тариф
+                        </div>
+
+                        <div id="planDisplay" class="form-field-view">
+                            <label>Тариф</label>
+                            <div class="value" id="planValue">—</div>
+                        </div>
+                    </div>
+
+                    <!-- личные данные -->
+                    <div class="form-section-view">
+                        <div class="form-section-view__title">
+                            <span class="form-section-view__num">2</span>
+                            Ваши данные
+                        </div>
+
+                        <div class="field-row-view">
+                            <div class="form-field-view">
+                                <label>Имя</label>
+                                <div class="value" id="fnameValue">—</div>
+                            </div>
+                            <div class="form-field-view">
+                                <label>Фамилия</label>
+                                <div class="value" id="lnameValue">—</div>
+                            </div>
+                        </div>
+
+                        <div class="form-field-view">
+                            <label>Email</label>
+                            <div class="value" id="emailValue">—</div>
+                        </div>
+
+                        <div class="form-field-view">
+                            <label>Телефон</label>
+                            <div class="value" id="phoneValue">—</div>
+                        </div>
+
+                        <div class="form-field-view">
+                            <label>Уровень игры</label>
+                            <div class="value" id="levelValue">—</div>
+                        </div>
+
+                        <div class="form-field-view">
+                            <label>Цель</label>
+                            <div class="value" id="goalValue">—</div>
+                        </div>
+                    </div>
+
+                    <!-- данные оплаты -->
+                    <div class="form-section-view">
+                        <div class="form-section-view__title">
+                            <span class="form-section-view__num">3</span>
+                            Данные оплаты
+                        </div>
+
+                        <div class="form-field-view">
+                            <label>Номер карты</label>
+                            <div class="value" id="cardValue">—</div>
+                        </div>
+
+                        <div class="field-row-view">
+                            <div class="form-field-view">
+                                <label>Срок действия</label>
+                                <div class="value" id="expiryValue">—</div>
+                            </div>
+                            <div class="form-field-view">
+                                <label>CVV</label>
+                                <div class="value" id="cvvValue">●●●</div>
+                            </div>
+                        </div>
+
+                        <div class="form-field-view">
+                            <label>Имя на карте</label>
+                            <div class="value" id="cardholderValue">—</div>
+                        </div>
+
+                        <div class="form-field-view" id="promoDisplay" style="display: none;">
+                            <label>Применённый промокод</label>
+                            <div class="value" id="promoValue">—</div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <button class="back-link" onclick="window.location.href='form.html'">
+                            Вернуться к форме оплаты
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <span class="footer__brand">ExtendedTheory</span>
+            <span>© 2026 · Сделано для Hexlet College</span>
+        </div>
+    </footer>
+
+    <script src="form.js"></script>
+    <script>
+        // Загружаем и отображаем сохраненные данные
+        document.addEventListener("DOMContentLoaded", function () {
+            const STORAGE_KEY = "extendedTheoryFormData";
+            const savedData = localStorage.getItem(STORAGE_KEY);
+
+            if (savedData) {
+                try {
+                    const formData = JSON.parse(savedData);
+
+                    // План
+                    const planNames = {
+                        "base": "Базовый (9 030 ₸)",
+                        "pro": "Pro (12 900 ₸)",
+                        "vip": "VIP (21 900 ₸)"
+                    };
+                    document.getElementById("planValue").textContent = planNames[formData.plan] || "—";
+
+                    // Личные данные
+                    document.getElementById("fnameValue").textContent = formData.fname || "—";
+                    document.getElementById("lnameValue").textContent = formData.lname || "—";
+                    document.getElementById("emailValue").textContent = formData.email || "—";
+                    document.getElementById("phoneValue").textContent = formData.phone || "—";
+                    document.getElementById("levelValue").textContent = formData.level || "—";
+                    document.getElementById("goalValue").textContent = formData.goal || "—";
+
+                    // Данные оплаты
+                    document.getElementById("cardValue").textContent = formData.card || "—";
+                    document.getElementById("expiryValue").textContent = formData.expiry || "—";
+                    // CVV не показываем в полном виде в целях безопасности
+                    document.getElementById("cvvValue").textContent = "●●●";
+
+                    document.getElementById("cardholderValue").textContent = formData.cardholder || "—";
+
+                    // Промокод (только если был применён)
+                    if (formData.promo) {
+                        document.getElementById("promoDisplay").style.display = "block";
+                        document.getElementById("promoValue").textContent = formData.promo;
+                    }
+
+                    console.log("✅ Данные загружены на страницу подтверждения");
+                } catch (e) {
+                    console.error("❌ Ошибка при отображении данных:", e);
+                }
+            } else {
+                console.warn("⚠️ Нет сохраненных данных");
+            }
+        });
+    </script>
+</body>
+
+</html>
