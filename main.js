@@ -193,7 +193,7 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
-// Эффект параллакса для фона при скролле 
+// Эффект параллакса для фона при скролле
 window.addEventListener("scroll", () => {
   const hero = document.querySelector(".hero");
   if (hero) {
@@ -202,6 +202,12 @@ window.addEventListener("scroll", () => {
   }
 });
 
-
+// Обработчик переключения темы
+document.addEventListener("DOMContentLoaded", () => {
+  const themeToggleBtn = document.getElementById("theme-toggle-btn");
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener("click", toggleTheme);
+  }
+});
 
 console.log("✅ Анимации загружены успешно!");

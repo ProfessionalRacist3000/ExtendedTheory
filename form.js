@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
       timestamp: new Date().toISOString(),
     };
     localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
-    console.log("✅ Данные формы сохранены в localStorage");
+    console.log("Данные формы сохранены в localStorage");
   }
 
   // Функция для восстановления данных из localStorage
@@ -248,7 +248,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (promoBtn) {
     promoBtn.addEventListener("click", function () {
       const val = document.getElementById("promo").value.trim().toUpperCase();
-      if (val === "METAL2025") {
+      if (val === "ASHVEIN") {
         this.textContent = "✓ Применён";
         this.style.borderColor = "var(--accent)";
         this.style.color = "var(--accent2)";
@@ -284,4 +284,10 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log(
     "   Чтобы увидеть сохраненные данные, выполни: console.log(localStorage.getItem('extendedTheoryFormData'))",
   );
+
+  // Обработчик переключения темы
+  const themeToggleBtn = document.getElementById("theme-toggle-btn");
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener("click", toggleTheme);
+  }
 });

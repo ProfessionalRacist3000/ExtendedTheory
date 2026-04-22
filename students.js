@@ -71,3 +71,11 @@ document.querySelectorAll(".filter-btn").forEach((btn) => {
     this.classList.add("is-active");
   });
 });
+
+// Обработчик переключения темы
+document.addEventListener("DOMContentLoaded", () => {
+  const themeToggleBtn = document.getElementById("theme-toggle-btn");
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener("click", toggleTheme);
+  }
+});

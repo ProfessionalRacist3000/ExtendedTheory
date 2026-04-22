@@ -189,3 +189,11 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     }
   });
 });
+
+// Обработчик переключения темы
+document.addEventListener("DOMContentLoaded", () => {
+  const themeToggleBtn = document.getElementById("theme-toggle-btn");
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener("click", toggleTheme);
+  }
+});
